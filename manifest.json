@@ -1,0 +1,21 @@
+{
+  "name": "こーかだいさいといのべーしょん？",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "TUSitesInnovationのフォーク？",
+  "icons": {  "16": "webclip.png",
+              "48": "webclip.png",
+              "128": "webclip.png"
+  },
+  "author": "TUT-Friends",
+  "content_scripts": [
+    {
+      "matches": [ "https://www.teu.ac.jp/*", "http://www.teu.ac.jp/*" ],
+      "js": ["jquery-2.1.1.min.js","script.js"],
+      "css": ["add.css"],
+      "run_at": "document_end"
+    }
+  ],"web_accessible_resources": ["add.css"]
+}
+
+
